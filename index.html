@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rob Malloy Membership — Support the Next Chapter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="nav">
+    <a class="brand" href="#top"><span class="fox">🦊</span><span>ROB MALLOY</span></a>
+    <nav>
+      <a href="#tiers">Membership</a>
+      <a href="#about">About</a>
+      <a href="#join" class="nav-cta">Join</a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Your Favorite Silver Fox · Official Support Circle</p>
+      <h1>Membership Support<br /><em>for Rob Malloy</em></h1>
+      <p class="lede">Helping adults 40+ reinvent their next chapter. Join the inner circle — early drops, community, and support for the work.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#join">Sign up for membership</a>
+        <a class="btn ghost" href="#tiers">See tiers</a>
+      </div>
+    </section>
+    <section class="stats">
+      <div><strong>200K+</strong><span>TikTok family</span></div>
+      <div><strong>40+</strong><span>The next chapter starts here</span></div>
+      <div><strong>YFS</strong><span>Your Favorite Silver Fox</span></div>
+    </section>
+    <section id="about" class="about">
+      <div class="about-copy">
+        <p class="eyebrow">Who you’re supporting</p>
+        <h2>Father. Coach. Creator.<br />Building in public after 40.</h2>
+        <p>Rob Malloy — <strong>@iamrobmalloy</strong> — dating coach, entrepreneur, actor. Membership keeps the content and community moving.</p>
+      </div>
+      <aside class="card quote"><p>“It’s not too late if you’re still here.”</p><span>— Rob Malloy</span></aside>
+    </section>
+    <section id="tiers" class="tiers">
+      <p class="eyebrow center">Choose how you show up</p>
+      <h2 class="center">Membership tiers</h2>
+      <div class="tier-grid">
+        <article class="tier" data-tier="Road Crew"><h3>Road Crew</h3><p class="price">$9<span>/mo</span></p><ul><li>Member badge & newsletter</li><li>Monthly voice note</li><li>Early public clips</li></ul><button class="btn ghost pick" type="button">Select Road Crew</button></article>
+        <article class="tier featured" data-tier="Inner Circle"><div class="ribbon">Most chosen</div><h3>Inner Circle</h3><p class="price">$29<span>/mo</span></p><ul><li>Everything in Road Crew</li><li>Private community access</li><li>Monthly live Q&amp;A</li></ul><button class="btn primary pick" type="button">Select Inner Circle</button></article>
+        <article class="tier" data-tier="VIP Fox"><h3>VIP Fox</h3><p class="price">$99<span>/mo</span></p><ul><li>Everything in Inner Circle</li><li>Priority intro</li><li>Quarterly thank-you call</li></ul><button class="btn ghost pick" type="button">Select VIP Fox</button></article>
+      </div>
+    </section>
+    <section id="join" class="join">
+      <div class="join-panel">
+        <p class="eyebrow">Start supporting</p>
+        <h2>Sign up for membership</h2>
+        <form id="member-form">
+          <div class="row">
+            <label>Full name<input type="text" name="name" required placeholder="Your name" /></label>
+            <label>Email<input type="email" name="email" required placeholder="you@email.com" /></label>
+          </div>
+          <div class="row">
+            <label>Phone <span class="opt">(optional)</span><input type="tel" name="phone" /></label>
+            <label>Membership tier
+              <select name="tier" id="tier-select" required>
+                <option value="Road Crew">Road Crew — $9/mo</option>
+                <option value="Inner Circle" selected>Inner Circle — $29/mo</option>
+                <option value="VIP Fox">VIP Fox — $99/mo</option>
+              </select>
+            </label>
+          </div>
+          <label>Why you’re joining<textarea name="note" rows="3"></textarea></label>
+          <label class="check"><input type="checkbox" name="agree" required /> I want to support Rob Malloy’s work.</label>
+          <button class="btn primary full" type="submit">Submit membership request</button>
+        </form>
+        <div id="success" class="success" hidden><h3>You’re in the queue.</h3><p id="success-copy"></p></div>
+      </div>
+    </section>
+  </main>
+  <footer><p>Rob Malloy · @iamrobmalloy · Membership Support</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
